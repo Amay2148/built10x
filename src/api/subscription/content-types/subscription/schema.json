@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "singularName": "subscription",
+    "pluralName": "subscriptions",
+    "displayName": "Subscription",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chief_inspector_id": {
+      "type": "integer"
+    },
+    "field_inspector_id": {
+      "type": "integer"
+    },
+    "started_at": {
+      "type": "datetime"
+    },
+    "stopped_at": {
+      "type": "datetime"
+    },
+    "chief_inspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "field_inspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

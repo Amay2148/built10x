@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "singularName": "report",
+    "pluralName": "reports",
+    "displayName": "Report",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectId": {
+      "type": "biginteger"
+    },
+    "name": {
+      "type": "string"
+    },
+    "filePath": {
+      "type": "string"
+    }
+  }
+}

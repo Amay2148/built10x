@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "condition_causes",
+  "info": {
+    "singularName": "condition-cause",
+    "pluralName": "condition-causes",
+    "displayName": "ConditionCause"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Condition": {
+      "type": "string"
+    },
+    "Cause": {
+      "type": "string"
+    },
+    "Recommendation": {
+      "type": "string"
+    }
+  }
+}

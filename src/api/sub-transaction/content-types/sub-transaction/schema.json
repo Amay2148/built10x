@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_transactions",
+  "info": {
+    "singularName": "sub-transaction",
+    "pluralName": "sub-transactions",
+    "displayName": "SubTransaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chief_inspector_id": {
+      "type": "integer"
+    },
+    "chief_inspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "stripe_invoice_id": {
+      "type": "string"
+    },
+    "amount_paid": {
+      "type": "decimal"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "line_items": {
+      "type": "json"
+    },
+    "raw_data": {
+      "type": "json"
+    }
+  }
+}

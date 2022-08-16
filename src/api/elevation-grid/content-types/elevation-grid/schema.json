@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elevation_grids",
+  "info": {
+    "singularName": "elevation-grid",
+    "pluralName": "elevation-grids",
+    "displayName": "ElevationGrid",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ElevationId": {
+      "type": "integer"
+    },
+    "Elevation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::elevation.elevation"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "ImagePath": {
+      "type": "string"
+    },
+    "XPosition": {
+      "type": "integer"
+    },
+    "YPosition": {
+      "type": "integer"
+    },
+    "Top": {
+      "type": "string"
+    },
+    "Left": {
+      "type": "string"
+    },
+    "Width": {
+      "type": "string"
+    },
+    "Height": {
+      "type": "string"
+    },
+    "AnnotatedImagePath": {
+      "type": "string"
+    }
+  }
+}

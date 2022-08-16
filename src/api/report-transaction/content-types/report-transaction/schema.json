@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "report_transactions",
+  "info": {
+    "singularName": "report-transaction",
+    "pluralName": "report-transactions",
+    "displayName": "ReportTransaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project_id": {
+      "type": "integer"
+    },
+    "raw_data": {
+      "type": "json"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  }
+}

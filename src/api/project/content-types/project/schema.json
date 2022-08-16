@@ -1,0 +1,111 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Company": {
+      "type": "string",
+      "required": false
+    },
+    "ProjectAddress": {
+      "type": "text"
+    },
+    "BuildingAddress": {
+      "type": "text"
+    },
+    "BIN": {
+      "type": "string"
+    },
+    "Block": {
+      "type": "string"
+    },
+    "CT": {
+      "type": "string"
+    },
+    "LOT": {
+      "type": "string"
+    },
+    "ConsultingFirm": {
+      "type": "string"
+    },
+    "ProjectDate": {
+      "type": "date"
+    },
+    "ProjectTime": {
+      "type": "time"
+    },
+    "Inspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "InspectorId": {
+      "type": "integer"
+    },
+    "ImagePath": {
+      "type": "string"
+    },
+    "APICreatedById": {
+      "type": "integer"
+    },
+    "APICreatedByUser": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "FieldInspectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "ApprovalPending",
+        "Approved",
+        "PaymentPending",
+        "PaymentDone",
+        "ReportsGenerated",
+        "Rejected"
+      ],
+      "default": "Active"
+    },
+    "AEConsultingInspector": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "DOBControlNumber": {
+      "type": "string"
+    },
+    "Miscellaneous": {
+      "type": "string"
+    },
+    "DeletedAt": {
+      "type": "datetime"
+    },
+    "ChiefInspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "ChiefInspectorId": {
+      "type": "integer"
+    }
+  }
+}

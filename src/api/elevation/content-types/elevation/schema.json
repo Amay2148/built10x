@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elevations",
+  "info": {
+    "singularName": "elevation",
+    "pluralName": "elevations",
+    "displayName": "Elevation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "ProjectId": {
+      "type": "integer",
+      "required": true
+    },
+    "GridRows": {
+      "type": "integer",
+      "required": true
+    },
+    "GridColumns": {
+      "type": "integer",
+      "required": true
+    },
+    "ImagePath": {
+      "type": "string"
+    },
+    "Project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "ImageWidth": {
+      "type": "string"
+    },
+    "ImageHeight": {
+      "type": "string"
+    },
+    "Lines": {
+      "type": "json"
+    },
+    "AnnotatedImagePath": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annotations",
+  "info": {
+    "singularName": "annotation",
+    "pluralName": "annotations",
+    "displayName": "Annotation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Comments": {
+      "type": "text",
+      "required": false
+    },
+    "ElevationGrid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::elevation-grid.elevation-grid"
+    },
+    "AnnotationNumber": {
+      "type": "integer"
+    },
+    "ElevationId": {
+      "type": "integer"
+    },
+    "Elevation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::elevation.elevation"
+    },
+    "ImagesPath": {
+      "type": "json"
+    },
+    "ConditionDescription": {
+      "type": "string"
+    },
+    "Causes": {
+      "type": "string"
+    },
+    "Unit": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "string"
+    },
+    "AnnotationObject": {
+      "type": "json"
+    },
+    "GridId": {
+      "type": "integer"
+    },
+    "Recommendation": {
+      "type": "string"
+    }
+  }
+}
